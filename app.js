@@ -34,3 +34,15 @@ function deleteTodo(key) {
   // Use the delete operator to remove the key-value pair from the todoList object.
   delete todoList[key];
 }
+
+/**
+* Marks a TODO item as completed by appending '(Completed)' to its description.
+* @param {string} key - The unique identifier for the TODO item to mark as complete.
+*/
+function markComplete(key) {
+  // Check if the TODO item exists in the list by its key.
+  if (todoList[key]) {
+      // Append the string ' (Completed)' to the existing value of the TODO item.
+      todoList[key] += ' (Completed)';
+  }
+}
