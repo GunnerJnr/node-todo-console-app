@@ -25,3 +25,12 @@ function updateTodo(key, newValue) {
       todoList[key] = newValue;
   }
 }
+
+/**
+* Deletes a TODO item from the list.
+* @param {string} key - The unique identifier for the TODO item to delete.
+*/
+function deleteTodo(key) {
+  // Use the delete operator to remove the key-value pair from the todoList object.
+  delete todoList[key];
+}
